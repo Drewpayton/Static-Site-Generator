@@ -3,16 +3,9 @@ from leafnode import LeafNode
 from parentnode import ParentNode
 
 def __main__():
-    node = ParentNode(
-        "p",
-        [
-            LeafNode("b", "Bold text"),
-            LeafNode(None, "Normal text"),
-            LeafNode("i", "italic text"),
-            LeafNode(None, "Normal text"),
-        ],
-    )
+    text_node = TextNode("This is amazing", "bold")
+    text_node_to_html_node(text_node)
 
-    print(node)
+
 
 __main__()
